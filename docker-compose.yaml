@@ -26,7 +26,7 @@ services:
     ports:
       - "${NGINX_PORT}:80"
     environment:
-      - MINIO_URL="http://minio:${MINIO_API_PORT}"
+      - MINIO_URL="{MINIO_URL}"
     depends_on:
       - minio
 
