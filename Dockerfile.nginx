@@ -9,7 +9,7 @@ RUN mkdir -p /var/cache/nginx && \
     chown -R nginx:nginx /var/cache/nginx
 
 # Copy our custom nginx configuration template
-COPY nginx.conf.template /etc/nginx/templates/
+COPY nginx.conf /etc/nginx/templates/
 
 # Setup entrypoint script to process the template
 RUN echo '#!/bin/sh\n\
